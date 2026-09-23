@@ -1,1 +1,242 @@
-<h1>Meu Site</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pessoal - Ana Clara</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            color: #4a4a4a;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho Rosa */
+        header {
+            background-color: #db2e68;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .avatar-container {
+            width: 90px;
+            height: 90px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .avatar-container img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        /* Cartões Brancos */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .card h2 {
+            color: #db2e68;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Rodapé Rosa */
+        footer {
+            background-color: #db2e68;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.8rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="avatar-container">
+            <!-- Imagem ilustrativa similar à da foto -->
+            <img src="icone2.jpeg" alt="Avatar">
+        </div>
+        <h1>Oii, eu sou a Ana Clara!</h1>
+        <p>Estudante do Ensino Médio Técnico SESI-SENAI</p>
+    </header>
+
+    <!-- Conteúdo em Cartões -->
+    <main>
+        <div class="card">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Ana Clara. Tenho 16 anos, e estudo no Sesi e também sou estudante do Ensino Médio Técnico SESI-SENAI. Gosto e estou sempre disposta a aprender coisas novas. Sou uma pessoa dedicada, curiosa e estou sempre buscando melhorar.Aqui você pode me conhecer melhor!</p>
+        </div>
+
+        <div class="card">
+            <h2>Como eu sou:</h2>
+            <ul>
+                <li>Sou muito extrovertida</li>
+                <li>Gosto de dar risada</li>
+                <li>Meu cabelo é bem longo</li>
+                <li>Não recuso um cookie</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Meus conhecimentos</h2>
+            <p>Estou aprendendo sobre tecnologia, programação, HTML e CSS. Também tenho interesse em aprender JavaScript e desenvolver novos conhecimentos na área de tecnologia.</p>
+        </div>
+
+        <div class="card">
+            <h2>Minhas qualidades</h2>
+            <p>Sou responsável, gosto de trabalhar em equipe, tenho facilidade para me comunicar e estou aberta a aprender e receber novos conhecimentos e opiniões.</p>
+        </div>
+
+        <div class="card">
+            <h2>Meu objetivo para o futuro</h2>
+            <p>Meu objetivo é continuar estudando, aprender novas habilidades e crescer tanto pessoalmente quanto profissionalmente. Quero construir uma carreira e conquistar meus objetivos.</p>
+        </div>
+    </main>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies da Ana</title>
+    
+    <!-- Link para carregar a biblioteca de ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Estilo dos cards */
+        .card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 22px 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card h2 {
+            color: #c26b88;
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* Lista personalizada de hobbies com ícones */
+        .hobby-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hobby-list li {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #555555;
+            margin-bottom: 12px;
+        }
+
+        /* Estilização e cor dos ícones */
+        .hobby-list li i {
+            color: #bb5b7c; /* Mesma cor rosa do tema */
+            font-size: 1.1rem;
+            width: 25px;
+            margin-right: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card de Hobbies e Interesses -->
+    <div class="card">
+        <h2>Meus hobbies e interesses</h2>
+        <ul class="hobby-list">
+            <li>
+                <i class="fa-solid fa-utensils"></i>
+                <span>Cozinhar novas receitas</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-tv"></i>
+                <span>Assistir filmes e séries</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>Ir para a academia</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-bed"></i>
+                <span>Dormir e descansar</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        Meu Site Pessoal - 2026
+    </footer>
+
+</body>
+</html>
